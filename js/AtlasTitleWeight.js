@@ -52,7 +52,7 @@ fetch(url)
 // function to build url api - depending on whether the search is basic or faceted.
 function buildSearchAPI(buttonSource){
 
-    let webhook_url = "https://us-east-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/moviesearch-gnspf/service/movies/incoming_webhook/titlefacet";
+    let webhook_url = "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/atlassearchmovies-krwpx/service/Movies/incoming_webhook/titlefacet";
     let searchString = document.getElementById('myInput').value;
     
     let webUrl = webhook_url + "?arg=" + searchString;

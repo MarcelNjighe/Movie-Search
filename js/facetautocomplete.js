@@ -27,7 +27,7 @@ function showFaceting() {
 const autoCompletedAction = async () =>
 {
     console.log("in autoCompletedAction")
-    let webhook_url = 'https://us-east-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/moviesearch-gnspf/service/movies/incoming_webhook/movies-titles-FTS';
+    let webhook_url = 'https://webhooks.mongodb-stitch.com/api/client/v2.0/app/atlassearchmovies-krwpx/service/Movies/incoming_webhook/movies-titles-FTS';
     let searchString = document.getElementById('myInput').value;
 
     let webURL = webhook_url + "?arg=" + searchString;

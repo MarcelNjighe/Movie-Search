@@ -3,7 +3,7 @@ const request = require('request');
 const MongoClient = require('mongodb').MongoClient;
 
 const app = express(); 
-const connectionString = 'mongodb+srv://marcel:Williams77@captone-server.x71z7.mongodb.net/moviesdb?retryWrites=true&w=majority' //  connection string 
+const connectionString = 'mongodb+srv://username:<password>@clustername.x71z7.mongodb.net/?retryWrdatabasenameites=true&w=majority' //  connection string 
 
 app.get('/getdata/:id', function(req, res) { 
     if (!req.params.id) { 
